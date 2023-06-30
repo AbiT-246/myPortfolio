@@ -52,9 +52,15 @@ body {
   top: -65%;
 }
 
-#blurb1 {
-  margin-top: 30%;
-  padding: 5%;
+#blurb1,
+#blurb1 p {
+  margin-top: 20%;
+  padding: 20%;
+  text-align: center;
+  font-family: "Ysabeau Office", sans-serif;
+  font-size: 20px;
+  color: #316931;
+  line-height: 200%;
 }
 
 .holder {
@@ -81,7 +87,7 @@ body {
 }
 
 #items {
-  margin-top: 30%;
+  margin-top: 20%;
   overflow-x: hidden;
 }
 
@@ -119,12 +125,13 @@ body {
 #specTitle2,
 #specTitle3,
 #specTitle4 {
-  margin-top: 100px;
   display: inline-block;
   max-width: 40%;
   text-align: center;
-  overflow: hidden;
   color: #285728;
+  height: fit-content;
+  padding-right: 3%;
+  padding-left: 3%;
 }
 
 #itself,
@@ -142,7 +149,7 @@ body {
 #itself2222,
 .projectDesc {
   font-family: sans-serif;
-  font-size: small;
+  font-size: 15px;
 }
 
 #navbar {
@@ -172,11 +179,13 @@ body {
   color: #316931;
 }
 
-#projects {
+.projects {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 40%;
+  margin-top: 20%;
+  position: relative;
+  top: -90%;
 }
 
 .project {
@@ -187,16 +196,30 @@ body {
 #projText {
   max-width: 40%;
   text-align: center;
-  /* overflow: hidden; */
+  overflow: hidden;
   color: #285728;
 }
 
-#projImage {
+.projImage {
   width: 350px;
   height: 200px;
-  background-image: url(Temp.jfif);
   background-position: center center;
   box-shadow: 1px -1px 15px #18542af3;
+}
+
+#weatherMate {
+  background-image: url(Projects/check-overlay.jpg);
+  background-size: 400px;
+}
+
+#versehunt {
+  background-image: url(Projects/blank2-overlay.jpg);
+  background-size: 400px;
+}
+
+#Peek {
+  background-image: url(Projects/overlay.jpg);
+  background-size: 400px;
 }
 
 #copyright {
@@ -222,7 +245,9 @@ body {
 
 #bottom {
   color: #285728;
-  margin-bottom: 10%;
+  background: rgba(172, 224, 172, 0.178);
+  height: 210px;
+  margin-bottom: 5%;
   margin-top: 30%;
 }
 

@@ -9,34 +9,35 @@ let projectDesc2 = projectDescs[1];
 let projectTitle3 = projectTitles[2];
 let projectDesc3 = projectDescs[2];
 
-let image = document.getElementById("projImage");
+let image = document.getElementById("weatherMate");
+let image2 = document.getElementById("versehunt");
+let image3 = document.getElementById("Peek");
 
 window.addEventListener("scroll", () => {
   let yAxis = window.scrollY;
   console.log(yAxis);
 
-  if (yAxis >= 175 && yAxis <= 417) {
+  if (yAxis >= 250 && yAxis <= 492) {
     let imageOffset = yAxis;
-    image.style.transform = `translateX(${-imageOffset * 0.7}px)`;
+    image.style.transform = `translateX(${-imageOffset}px)`;
     let titleOffset = yAxis;
     projectTitle.style.transform = `translateY(${-titleOffset * 0.7}px)`;
     projectDesc.style.transform = `translateY(${-titleOffset * 0.7}px)`;
-    console.log(titleOffset * 0.5);
   }
-  if (yAxis >= 900 && yAxis <= 1050) {
-    // let imageOffset = yAxis;
-    // image.style.transform = `translateX(${-imageOffset * 0.7}px)`;
+
+  if (yAxis >= 900 && yAxis <= 1100) {
+    let imageOffset = yAxis - 600;
+    image2.style.transform = `translateX(${imageOffset * 0.9}px)`;
     let titleOffset = yAxis - 600;
     projectTitle2.style.transform = `translateY(${-titleOffset * 0.7}px)`;
     projectDesc2.style.transform = `translateY(${-titleOffset * 0.7}px)`;
-    // console.log(titleOffset * 0.5);
   }
-  // if (yAxis >= 175 && yAxis <= 417) {
-  //   let imageOffset = yAxis;
-  //   image.style.transform = `translateX(${-imageOffset * 0.7}px)`;
-  //   let titleOffset = yAxis;
-  //   projectTitle.style.transform = `translateY(${-titleOffset * 0.7}px)`;
-  //   projectDesc.style.transform = `translateY(${-titleOffset * 0.7}px)`;
-  //   console.log(titleOffset * 0.5);
-  // }
+
+  if (yAxis >= 1100 && yAxis <= 1600) {
+    let imageOffset = yAxis - 1100;
+    image3.style.transform = `translateX(${-imageOffset * 0.7}px)`;
+    let titleOffset = yAxis - 1100;
+    projectTitle3.style.transform = `translateY(${-titleOffset * 0.7}px)`;
+    projectDesc3.style.transform = `translateY(${-titleOffset * 0.7}px)`;
+  }
 });
