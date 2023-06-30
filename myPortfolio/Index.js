@@ -91,8 +91,8 @@ window.addEventListener("scroll", () => {
     itself222.style.transform = `translateY(${-titleOffset * 0.7}px)`;
     console.log(titleOffset * 0.5);
   }
-  if (yAxis >= 4000 && yAxis <= 4700) {
-    let titleOffset = yAxis - 4300;
+  if (yAxis >= 3900 && yAxis <= 4600) {
+    let titleOffset = yAxis - 4200;
     itself1111.style.transform = `translateY(${-titleOffset * 0.7}px)`;
     itself2222.style.transform = `translateY(${-titleOffset * 0.7}px)`;
     console.log(titleOffset * 0.5);
