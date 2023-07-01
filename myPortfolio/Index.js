@@ -39,11 +39,21 @@ window.addEventListener("scroll", () => {
   }
 
   if (yAxis <= 450) {
-    text.style.marginTop = yAxis * 1.5 + "px";
-    body.style.backgroundColor = "aliceblue";
+    if (window.matchMedia("(min-width: 1500px)").matches) {
+      text.style.marginTop = yAxis * 1.5 + "px";
+      body.style.backgroundColor = "aliceblue";
+    } else {
+      text.style.marginTop = yAxis * 1.5 + "px";
+      body.style.backgroundColor = "aliceblue";
+    }
   } else {
-    text.style.marginTop = "675px";
-    navbar.classList.remove("fixed");
+    if (window.matchMedia("(min-width: 1500px)").matches) {
+      text.style.marginTop = "750px";
+      navbar.classList.remove("fixed");
+    } else {
+      text.style.marginTop = "675px";
+      navbar.classList.remove("fixed");
+    }
   }
 
   if (yAxis <= 730) {

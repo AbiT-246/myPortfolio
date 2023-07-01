@@ -264,3 +264,9 @@ iframe {
   margin: 1%;
   z-index: 1;
 }
+
+@media (min-width: 1500px) {
+  #hello {
+    margin-top: 900px;
+  }
+}
