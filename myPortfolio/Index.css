@@ -273,18 +273,31 @@ iframe {
   #images11,
   #images111,
   #images1111 {
-    left: -15%;
+    left: -25%;
   }
   #images2,
   #images22,
   #images222,
   #images2222 {
-    right: -15%;
+    right: -25%;
   }
   #specTitle,
   #specTitle2,
   #specTitle3,
   #specTitle4 {
-    margin-left: 5%;
+    /* margin-left: 5%; */
+  }
+
+  #items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .About .activity {
+    top: 0;
+  }
+
+  #specTitle {
+    top: 50px;
   }
 }
