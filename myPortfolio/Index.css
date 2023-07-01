@@ -210,16 +210,22 @@ body {
 #weatherMate {
   background-image: url(Projects/check-overlay.jpg);
   background-size: 400px;
+  position: relative;
+  right: -40%;
 }
 
 #versehunt {
   background-image: url(Projects/blank2-overlay.jpg);
   background-size: 400px;
+  position: relative;
+  left: -40%;
 }
 
 #Peek {
   background-image: url(Projects/overlay.jpg);
   background-size: 400px;
+  position: relative;
+  right: -40%;
 }
 
 #copyright {
@@ -281,11 +287,14 @@ iframe {
   #images2222 {
     right: -25%;
   }
-  #specTitle,
-  #specTitle2,
-  #specTitle3,
-  #specTitle4 {
-    /* margin-left: 5%; */
+
+  #weatherMate,
+  #Peek {
+    right: -30%;
+  }
+
+  #versehunt {
+    left: -25%;
   }
 
   #items {
