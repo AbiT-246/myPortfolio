@@ -269,4 +269,22 @@ iframe {
   #hello {
     margin-top: 900px;
   }
+  #images1,
+  #images11,
+  #images111,
+  #images1111 {
+    left: -15%;
+  }
+  #images2,
+  #images22,
+  #images222,
+  #images2222 {
+    right: -15%;
+  }
+  #specTitle,
+  #specTitle2,
+  #specTitle3,
+  #specTitle4 {
+    margin-left: 5%;
+  }
 }
