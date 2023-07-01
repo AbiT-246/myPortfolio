@@ -297,7 +297,7 @@ iframe {
     top: 0;
   }
 
-  #specTitle {
-    top: 50px;
+  .About {
+    padding-top: 20%;
   }
 }

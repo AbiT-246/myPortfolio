@@ -47,7 +47,10 @@ window.addEventListener("scroll", () => {
       body.style.backgroundColor = "aliceblue";
     }
   } else {
-    if (window.matchMedia("(min-width: 1500px)").matches) {
+    if (window.matchMedia("(min-width: 1600px)").matches) {
+      text.style.marginTop = "850px";
+      navbar.classList.remove("fixed");
+    } else if (window.matchMedia("(min-width: 1500px)").matches) {
       text.style.marginTop = "750px";
       navbar.classList.remove("fixed");
     } else {
