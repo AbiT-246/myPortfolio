@@ -24,6 +24,22 @@ let itself222 = document.getElementById("itself222");
 let itself1111 = document.getElementById("itself1111");
 let itself2222 = document.getElementById("itself2222");
 
+function redirect() {
+  const tempInput = document.createElement("input");
+  tempInput.value = "Abitibebu123@gmail.com";
+
+  document.body.appendChild(tempInput);
+
+  tempInput.select();
+  tempInput.setSelectionRange(0, 99999);
+
+  document.execCommand("copy");
+
+  document.body.removeChild(tempInput);
+
+  alert("Email address copied to clipboard: " + "Abitibebu123@gmail.com");
+}
+
 window.addEventListener("scroll", () => {
   let yAxis = window.scrollY;
   console.log(yAxis);

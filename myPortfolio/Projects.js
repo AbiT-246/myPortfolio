@@ -13,6 +13,22 @@ let image = document.getElementById("weatherMate");
 let image2 = document.getElementById("versehunt");
 let image3 = document.getElementById("Peek");
 
+function redirect() {
+  const tempInput = document.createElement("input");
+  tempInput.value = "Abitibebu123@gmail.com";
+
+  document.body.appendChild(tempInput);
+
+  tempInput.select();
+  tempInput.setSelectionRange(0, 99999);
+
+  document.execCommand("copy");
+
+  document.body.removeChild(tempInput);
+
+  alert("Email address copied to clipboard: " + "Abitibebu123@gmail.com");
+}
+
 window.addEventListener("scroll", () => {
   let yAxis = window.scrollY;
   console.log(yAxis);

@@ -251,7 +251,8 @@ body {
 }
 
 #bottom li,
-#bottom a {
+#bottom a,
+#bottom button {
   font-family: "Ysabeau Office", sans-serif;
   color: #285728;
   margin: 15%;
@@ -275,6 +276,11 @@ body {
   font-weight: 550;
 }
 
+.actLists:hover {
+  text-decoration: none;
+  color: rgb(116, 126, 116);
+}
+
 iframe {
   display: inline-block;
   position: absolute;
@@ -282,6 +288,15 @@ iframe {
   right: 0;
   margin: 1%;
   z-index: 1;
+}
+
+#email {
+  background: transparent;
+  border: none;
+}
+
+#email:hover {
+  color: rgb(121, 147, 121);
 }
 
 @media (min-width: 1500px) {
