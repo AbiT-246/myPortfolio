@@ -266,7 +266,7 @@ body {
 #bottom {
   color: #285728;
   background: rgba(172, 224, 172, 0.178);
-  height: 250px;
+  height: 450px;
   margin-top: 30%;
 }
 
@@ -300,9 +300,8 @@ iframe {
 
 #grass {
   width: 100%;
-  position: absolute;
-  bottom: -918%;
-  height: 30%;
+  position: relative;
+  bottom: 0;
 }
 
 @media (min-width: 1500px) {
