@@ -75,15 +75,31 @@ window.addEventListener("scroll", () => {
   }
 
   if (yAxis >= 700 && yAxis <= 1400) {
-    let images1Offset = yAxis - 700;
-    images1.style.transform = `translateX(${images1Offset * 0.5}px)`;
-    let images2Offset = yAxis - 700;
-    images2.style.transform = `translateX(${-images2Offset * 0.5}px)`;
-    let titleOffset = yAxis - 1000;
-    itself.style.transform = `translateY(${-titleOffset * 0.5}px)`;
-    itself2.style.transform = `translateY(${-titleOffset * 0.5}px)`;
-    console.log(titleOffset * 0.5);
+    if (window.matchMedia("(max-width: 1500px)").matches) {
+      let images1Offset = yAxis - 700;
+      images1.style.transform = `translateX(${images1Offset * 0.5}px)`;
+      let images2Offset = yAxis - 700;
+      images2.style.transform = `translateX(${-images2Offset * 0.5}px)`;
+      let titleOffset = yAxis - 1000;
+      itself.style.transform = `translateY(${-titleOffset * 0.5}px)`;
+      itself2.style.transform = `translateY(${-titleOffset * 0.5}px)`;
+      console.log(titleOffset * 0.5);
+    }
   }
+
+  if (yAxis >= 1100 && yAxis <= 1800) {
+    if (window.matchMedia("(min-width: 1500px)").matches) {
+      let images1Offset = yAxis - 1100;
+      images1.style.transform = `translateX(${images1Offset * 0.5}px)`;
+      let images2Offset = yAxis - 1100;
+      images2.style.transform = `translateX(${-images2Offset * 0.5}px)`;
+      let titleOffset = yAxis - 1400;
+      itself.style.transform = `translateY(${-titleOffset * 0.5}px)`;
+      itself2.style.transform = `translateY(${-titleOffset * 0.5}px)`;
+      console.log(titleOffset * 0.5);
+    }
+  }
+
   if (yAxis >= 1700 && yAxis <= 2400) {
     let images11Offset = yAxis - 1700;
     images11.style.transform = `translateX(${images11Offset * 0.5}px)`;
