@@ -266,8 +266,7 @@ body {
 #bottom {
   color: #285728;
   background: rgba(172, 224, 172, 0.178);
-  height: 210px;
-  margin-bottom: 5%;
+  height: 250px;
   margin-top: 30%;
 }
 
@@ -297,6 +296,13 @@ iframe {
 
 #email:hover {
   color: rgb(121, 147, 121);
+}
+
+#grass {
+  width: 100%;
+  position: absolute;
+  bottom: -918%;
+  height: 30%;
 }
 
 @media (min-width: 1500px) {
