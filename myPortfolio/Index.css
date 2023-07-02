@@ -323,3 +323,31 @@ iframe {
     padding-top: 20%;
   }
 }
+
+@media (max-width: 1200px) {
+  #specTitle,
+  #specTitle2,
+  #specTitle3,
+  #specTitle4 {
+    max-width: 40%;
+  }
+
+  #items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #images1,
+  #images11,
+  #images111,
+  #images1111 {
+    left: -33%;
+  }
+  #images2,
+  #images22,
+  #images222,
+  #images2222 {
+    right: -33%;
+  }
+}
