@@ -53,18 +53,12 @@ window.addEventListener("scroll", () => {
     navbar.style.background = "none";
   }
 
-  if (yAxis <= 450) {
+  if (yAxis <= 200) {
     if (window.matchMedia("(min-width: 1500px)").matches) {
       text.style.marginTop = yAxis * 1.5 + "px";
     } else {
       text.style.marginTop = yAxis * 1.5 + "px";
     }
-  }
-
-  if (yAxis >= 1100) {
-    body.style.background =
-      "linear-gradient(to bottom, #151515ff00 20%, black 80%)";
-  } else {
   }
 
   if (yAxis >= 700 && yAxis <= 1400) {
