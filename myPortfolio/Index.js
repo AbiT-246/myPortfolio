@@ -5,7 +5,6 @@ let palm = document.getElementById("palm1");
 let hill1 = document.getElementById("back");
 let hill2 = document.getElementById("backback");
 let navbar = document.getElementById("navbar");
-let spotify = document.getElementById("spotify");
 
 let images1 = document.getElementById("images1");
 let images2 = document.getElementById("images2");
@@ -54,40 +53,12 @@ window.addEventListener("scroll", () => {
     navbar.style.background = "none";
   }
 
-  if (yAxis <= 450) {
+  if (yAxis <= 200) {
     if (window.matchMedia("(min-width: 1500px)").matches) {
       text.style.marginTop = yAxis * 1.5 + "px";
-      body.style.backgroundColor = "aliceblue";
     } else {
       text.style.marginTop = yAxis * 1.5 + "px";
-      body.style.backgroundColor = "aliceblue";
     }
-  } else {
-    if (window.matchMedia("(min-width: 1600px)").matches) {
-      text.style.marginTop = "850px";
-      navbar.classList.remove("fixed");
-    } else if (window.matchMedia("(min-width: 1500px)").matches) {
-      text.style.marginTop = "750px";
-      navbar.classList.remove("fixed");
-    } else {
-      text.style.marginTop = "675px";
-      navbar.classList.remove("fixed");
-    }
-  }
-
-  if (yAxis <= 730) {
-    navbar.classList.add("fixed");
-    spotify.classList.add("fixed");
-  } else {
-    navbar.classList.remove("fixed");
-    spotify.classList.remove("fixed");
-  }
-
-  if (yAxis >= 1100) {
-    body.style.background =
-      "linear-gradient(to bottom, #151515ff00 20%, black 80%)";
-  } else {
-    body.style.background = "aliceblue";
   }
 
   if (yAxis >= 700 && yAxis <= 1400) {
