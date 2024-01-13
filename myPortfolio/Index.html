@@ -10,6 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Ysabeau+Office:wght@200;400&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
 
     <link
       rel="stylesheet"
@@ -22,69 +26,65 @@
   </head>
   <body id="body">
     <section class="main">
-      <div
-        id="navbar"
-        class="d-inline-flex justify-content-between p-2 rounded"
-      >
-        <a class="links mx-3 my-1" href="Index.html">About ✿</a>
-        <a class="links mx-3 my-1" href="Projects.html">Projects ⌨</a>
-        <a class="links mx-3 my-1" href="Poetry.html">Poetry ✎</a>
-        <a class="links mx-3 my-1" href="#bottom">Contact ☏</a>
+      <div id="navbar" class="d-inline-flex justify-content-center p-2 rounded">
+        <div class="flex-fill mx-3">
+          <a class="links my-1" href="Index.html">About ✿</a>
+        </div>
+        <div class="flex-fill mx-3">
+          <a class="links my-1" href="Projects.html">Projects ⌨</a>
+        </div>
+        <div class="flex-fill mx-3">
+          <a class="links my-1" href="Poetry.html">Poetry ✎</a>
+        </div>
+        <div class="flex-fill mx-3">
+          <a class="links my-1" href="#bottom">Contact ☏</a>
+        </div>
       </div>
 
       <iframe
         id="spotify"
         style="border-radius: 12px"
         src="https://open.spotify.com/embed/playlist/7gySRQtsjkhu5Cqq7HCylT?utm_source=generator&theme=0"
-        width="20%"
+        width="25%"
         height="100"
         frameborder="0"
         allowfullscreen=""
         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
         loading="lazy"
       ></iframe>
-
-      <h2 id="Hello">Hi, I'm Abi</h2>
+      <div id="Hello" class="container d-inline-block">
+        <h1>Hi, I'm Abi</h1>
+      </div>
       <img src="bird.png" alt="" id="bird" />
       <img src="BackBack.png" id="backback" />
       <img src="Back.png" alt="" id="back" />
       <img src="palm1ed.png" alt="" id="palm1" />
     </section>
     <section id="blurb1">
-      I’m a current computer science major and an aspiring software developer
-      based in Calgary, Alberta. Before getting into the nitty-gritty, scroll
-      down and check out some of the fun stuff I like to do… <br />
-      Oh, and make sure to give my rainy day playlist above a listen as you
-      scroll!
+      <div id="pic" class="d-inline-block ml-5">
+        <div class="float-right" id="thepic"></div>
+      </div>
+      <div id="blurb" class="d-inline-block ml-2">
+        <!-- <img class="leaf" src="Leaf.png" alt="" /> -->
+        <h5 class="sub">
+          I’m a current computer science major and an aspiring software
+          developer based in Calgary, Alberta.
+        </h5>
+        <p class="reg">
+          Before getting into the nitty-gritty, scroll down and check out some
+          of the fun stuff I like to do… <br />
+          Oh, and make sure to give my rainy day playlist above a listen as you
+          scroll!
+        </p>
+        <!-- <img class="leaf" src="Leaf.png" alt="" /> -->
+      </div>
     </section>
 
-    <section
-      id="items"
-      class="mx-5"
-      style="overflow: hidden; height: auto; width: auto"
-    >
-      <div
-        id="images1"
-        class="d-inline-flex flex-column justify-content-between p-2 float-start"
-      >
-        <div
-          class="holder rounded"
-          style="background-image: url(Poetry/4.png); background-size: 450px"
-        >
-          <img src="palm2.png" alt="" class="innerpalm" />
-          <img src="rotated.png" alt="" class="innerpalm rotated" />
-        </div>
-        <div
-          class="holder rounded"
-          style="background-image: url(Poetry/1.png); background-size: 530px"
-        >
-          <img src="palm2.png" alt="" class="innerpalm" />
-          <img src="rotated.png" alt="" class="innerpalm rotated" />
-        </div>
-      </div>
-      <div class="About" id="specTitle">
-        <h2 class="activity" id="itself">Poetry</h2>
-        <p class="activity" id="itself2">
+    <section>
+      <div class="aboutContainer">
+        <h5 class="sub" style="color: #025a4e7a">01</h5>
+        <h6 class="sub my-4" style="font-size: 35px">Poetry</h6>
+        <p class="reg">
           Writing has always been my way of expressing myself and making sense
           of the world around me. Through that journey, I came to learn that
           fewer words make the greatest impact. My poetry has touched the lives
@@ -93,57 +93,96 @@
           can do.
         </p>
       </div>
-      <div
-        id="images2"
-        class="d-inline-flex flex-column justify-content-between p-2 float-right"
-      >
+      <div class="d-flex justify-content-center" style="margin-top: 6%">
         <div
-          class="holder rounded"
-          style="background-image: url(Poetry/3.png); background-size: 290px"
-        >
-          <img src="palm2.png" alt="" class="innerpalm" />
-          <img src="rotated.png" alt="" class="innerpalm rotated" />
-        </div>
-        <div
-          class="holder rounded"
-          style="background-image: url(Poetry/2.png); background-size: 300px"
-        >
-          <img src="palm2.png" alt="" class="innerpalm" />
-          <img src="rotated.png" alt="" class="innerpalm rotated" />
+          class="d-inline-block"
+          style="
+            border-radius: 3%;
+            width: 45%;
+            min-height: 410px;
+            margin-right: 1%;
+            background-image: url(Poetry/Certificate.png);
+            background-size: cover;
+          "
+        ></div>
+        <div class="d-inline-block" style="width: 25%">
+          <div
+            class="mb-2"
+            style="
+              border-radius: 3%;
+              background-image: url(Poetry/2.png);
+              background-size: cover;
+              min-height: 230px;
+            "
+          ></div>
+          <div
+            class=""
+            style="
+              border-radius: 3%;
+              background-image: url(Poetry/1.png);
+              background-size: cover;
+              min-height: 230px;
+            "
+          ></div>
         </div>
       </div>
     </section>
 
-    <section id="items" class="mx-5">
-      <div
-        id="images11"
-        class="d-inline-flex flex-column justify-content-between p-2 float-start"
-      >
+    <section style="margin-top: 13%">
+      <div class="aboutContainer">
+        <h5 class="sub" style="color: #025a4e7a">01</h5>
+        <h6 class="sub my-4" style="font-size: 35px">Photography</h6>
+        <p class="reg">
+          I don’t believe there is a greater gift than being able to capture and
+          preserve a beautiful moment in time and relive it through a piece of
+          paper (or screen); that belief is what drew me to photography.
+          Immersed in various communities, cultures, and breathtaking
+          landscapes, I have been able to bring this gift to fruition many
+          times, and sharing the magic of my experiences with others brings me
+          immense joy.
+        </p>
+      </div>
+      <div class="d-flex justify-content-center" style="margin-top: 6%">
         <div
-          class="holder rounded"
-          style="background-image: url(Wics/logo.png); background-size: 250px"
-        >
-          <img src="palm2.png" alt="" class="innerpalm" />
-          <img src="rotated.png" alt="" class="innerpalm rotated" />
-        </div>
-        <div
-          class="holder rounded"
-          style="background-image: url(Wics/4.jpg); background-size: 350px"
-        >
-          <img src="palm2.png" alt="" class="innerpalm" />
-          <img src="rotated.png" alt="" class="innerpalm rotated" />
-        </div>
-        <div
-          class="holder rounded"
-          style="background-image: url(Wics/3.jpg); background-size: 300px"
-        >
-          <img src="palm2.png" alt="" class="innerpalm" />
-          <img src="rotated.png" alt="" class="innerpalm rotated" />
+          class="d-inline-block"
+          style="
+            border-radius: 3%;
+            width: 45%;
+            min-height: 410px;
+            margin-right: 1%;
+            background-image: url(Wics/ghcpic.png);
+            background-size: cover;
+          "
+        ></div>
+        <div class="d-inline-block" style="width: 25%">
+          <div
+            class="mb-2"
+            style="
+              border-radius: 3%;
+              background-image: url(Wics/IMG_9135.jpg);
+              background-size: cover;
+              min-height: 230px;
+            "
+          ></div>
+          <div
+            style="
+              border-radius: 3%;
+              background-image: url(Wics/IMG_3028.jpg);
+              background-size: cover;
+              min-height: 230px;
+            "
+          ></div>
         </div>
       </div>
-      <div class="About" id="specTitle2">
-        <h2 class="activity" id="itself11">WICS</h2>
-        <p class="activity" id="itself22">
+    </section>
+
+    <section style="margin-top: 13%">
+      <div class="aboutContainer">
+        <h5 class="sub" style="color: #025a4e7a">01</h5>
+        <h6 class="sub my-4" style="font-size: 35px">
+          Supporting Women in Tech
+        </h6>
+        <p class="reg">
           As members of the Women in Computer Science club, we believe
           technology is an essential tool that everyone should have the right to
           leverage. Coming from a society where a person's background often
@@ -154,152 +193,42 @@
           friendships.
         </p>
       </div>
-      <div
-        id="images22"
-        class="d-inline-flex flex-column justify-content-between p-2 float-right"
-      >
+      <div class="d-flex justify-content-center" style="margin-top: 6%">
         <div
-          class="holder rounded"
+          class="d-inline-block"
           style="
-            background-image: url(Wics/cancwic.JPG);
-            background-size: 300px;
+            border-radius: 3%;
+            width: 45%;
+            min-height: 410px;
+            margin-right: 1%;
+            background-image: url(Wics/ghcpic.png);
+            background-size: cover;
           "
-        >
-          <img src="palm2.png" alt="" class="innerpalm" />
-          <img src="rotated.png" alt="" class="innerpalm rotated" />
+        ></div>
+        <div class="d-inline-block" style="width: 25%">
+          <div
+            class="mb-2"
+            style="
+              border-radius: 3%;
+              background-image: url(Wics/IMG_9135.jpg);
+              background-size: cover;
+              min-height: 230px;
+            "
+          ></div>
+          <div
+            style="
+              border-radius: 3%;
+              background-image: url(Wics/IMG_3028.jpg);
+              background-size: cover;
+              min-height: 230px;
+            "
+          ></div>
         </div>
-        <div
-          class="holder rounded"
-          style="
-            background-image: url(Wics/IMG_9135.jpg);
-            background-size: 300px;
-          "
-        >
-          <img src="palm2.png" alt="" class="innerpalm" />
-          <img src="rotated.png" alt="" class="innerpalm rotated" />
-        </div>
-        <div
-          class="holder rounded"
-          style="
-            background-image: url(Wics/IMG_3028.jpg);
-            background-size: 300px;
-          "
-        >
-          <img src="palm2.png" alt="" class="innerpalm" />
-          <img src="rotated.png" alt="" class="innerpalm rotated" />
-        </div>
-      </div>
-    </section>
-
-    <section id="items" class="mx-5">
-      <div
-        id="images111"
-        class="d-inline-flex flex-column justify-content-between p-2 float-start"
-      >
-        <div
-          class="holder rounded"
-          style="
-            background-image: url(Photography/photo_1_2023-06-30_01-31-05.jpg);
-            background-size: 250px;
-          "
-        >
-          <img src="palm2.png" alt="" class="innerpalm" />
-          <img src="rotated.png" alt="" class="innerpalm rotated" />
-        </div>
-        <div
-          class="holder rounded"
-          style="
-            background-image: url(Photography/photo_2_2023-06-30_01-31-05.jpg);
-            background-size: 350px;
-          "
-        >
-          <img src="palm2.png" alt="" class="innerpalm" />
-          <img src="rotated.png" alt="" class="innerpalm rotated" />
-        </div>
-        <div
-          class="holder rounded"
-          style="
-            background-image: url(Photography/photo_3_2023-06-30_01-31-05.jpg);
-            background-size: 300px;
-          "
-        >
-          <img src="palm2.png" alt="" class="innerpalm" />
-          <img src="rotated.png" alt="" class="innerpalm rotated" />
-        </div>
-      </div>
-      <div class="About" id="specTitle3">
-        <h2 class="activity" id="itself111">Photography</h2>
-        <p class="activity" id="itself222">
-          I don’t believe there is a greater gift than being able to capture and
-          preserve a beautiful moment in time and relive it through a piece of
-          paper (or screen); that belief is what drew me to photography.
-          Immersed in various communities, cultures, and breathtaking
-          landscapes, I have been able to bring this gift to fruition many
-          times, and sharing the magic of my experiences with others brings me
-          immense joy.
-        </p>
-      </div>
-      <div
-        id="images222"
-        class="d-inline-flex flex-column justify-content-between p-2 float-right"
-      >
-        <div
-          class="holder rounded"
-          style="
-            background-image: url(Photography/photo_4_2023-06-30_01-31-05.jpg);
-            background-size: 300px;
-          "
-        >
-          <img src="palm2.png" alt="" class="innerpalm" />
-          <img src="rotated.png" alt="" class="innerpalm rotated" />
-        </div>
-        <div
-          class="holder rounded"
-          style="
-            background-image: url(Photography/photo_5_2023-06-30_01-31-05.jpg);
-            background-size: 300px;
-          "
-        >
-          <img src="palm2.png" alt="" class="innerpalm" />
-          <img src="rotated.png" alt="" class="innerpalm rotated" />
-        </div>
-        <div
-          class="holder rounded"
-          style="
-            background-image: url(Photography/photo_6_2023-06-30_01-31-05.jpg);
-            background-size: 300px;
-          "
-        >
-          <img src="palm2.png" alt="" class="innerpalm" />
-          <img src="rotated.png" alt="" class="innerpalm rotated" />
-        </div>
-      </div>
-    </section>
-    <section
-      id="items"
-      class="mx-5"
-      style="
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 10%;
-      "
-    >
-      <div
-        class=""
-        id="specTitle4"
-        style="overflow: hidden; height: auto; width: auto"
-      >
-        <h2 class="activity" id="itself1111">And Programming of course!</h2>
-        <p class="activity" id="itself2222" style="margin-bottom: 10%">
-          Now we can get into the nitty-gritty… go check out some of my projects
-          :)
-        </p>
       </div>
     </section>
 
     <section class="" id="bottom">
-      <h6 id="copyright" class="mt-5 d-inline-block">© 2023 Abigia Debebe</h6>
+      <h6 id="copyright" class="mt-5 d-inline-block">© 2024 Abigia Debebe</h6>
       <div
         id="listsCont"
         class="d-inline-flex justify-content-between p-2 float-right mt-3"
