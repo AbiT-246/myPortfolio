@@ -13,6 +13,8 @@ let image = document.getElementById("weatherMate");
 let image2 = document.getElementById("versehunt");
 let image3 = document.getElementById("Peek");
 
+let navbar = document.getElementById("navbar");
+
 function redirect() {
   const tempInput = document.createElement("input");
   tempInput.value = "Abitibebu123@gmail.com";
@@ -32,6 +34,12 @@ function redirect() {
 window.addEventListener("scroll", () => {
   let yAxis = window.scrollY;
   console.log(yAxis);
+
+  if (yAxis >= 173) {
+    navbar.style.background = "rgb(255 249 249 / 66%)";
+  } else {
+    navbar.style.background = "none";
+  }
 
   if (yAxis >= 300 && yAxis <= 450) {
     let imageOffset = yAxis;
@@ -57,3 +65,7 @@ window.addEventListener("scroll", () => {
     projectDesc3.style.transform = `translateY(${-titleOffset * 0.7}px)`;
   }
 });
+
+function redirectToPage(pageUrl) {
+  window.location.href = window.location.origin + "/" + pageUrl;
+}

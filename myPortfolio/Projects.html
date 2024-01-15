@@ -22,108 +22,181 @@
   </head>
   <body id="body" style="background-color: aliceblue">
     <section class="main">
-      <div
-        id="navbar"
-        class="d-inline-flex justify-content-between p-2 rounded"
-      >
-        <a class="links mx-3 my-1" href="Index.html">About ✿</a>
-        <a class="links mx-3 my-1" href="Projects.html">Projects ⌨</a>
-        <a class="links mx-3 my-1" href="Poetry.html">Poetry ✎</a>
-        <a class="links mx-3 my-1" href="#bottom">Contact ☏</a>
+      <div id="navbar" class="d-inline-flex justify-content-center p-2 rounded">
+        <div class="flex-fill mx-3">
+          <a class="links my-1" href="Index.html">About ✿</a>
+        </div>
+        <div class="flex-fill mx-3">
+          <a class="links my-1" href="Projects.html">Projects ⌨</a>
+        </div>
+        <div class="flex-fill mx-3">
+          <a class="links my-1" href="Poetry.html">Poetry ✎</a>
+        </div>
+        <div class="flex-fill mx-3">
+          <a class="links my-1" href="#bottom">Contact ☏</a>
+        </div>
       </div>
       <iframe
         id="spotify"
         style="border-radius: 12px"
         src="https://open.spotify.com/embed/playlist/7gySRQtsjkhu5Cqq7HCylT?utm_source=generator&theme=0"
-        width="20%"
+        width="25%"
         height="100"
         frameborder="0"
         allowfullscreen=""
         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
         loading="lazy"
       ></iframe>
-      <h2
-        id="Hello"
-        style="z-index: 1; color: rgba(26, 104, 26, 0.423); top: 14%"
-      >
-        Projects
-      </h2>
-      <div id="blurb1" style="padding: 1%">
-        <p>
-          Check out some of my recent projects <br />
-          and stay tuned for new ones to come!
-        </p>
-      </div>
-
       <img src="BackBack.png" alt="" style="position: absolute; top: -192%" />
-    </section>
-    <section class="projects">
-      <div id="projText" class="project">
-        <h2 style="margin-top: 10%" class="activity projectTitle">
-          WeatherMate
-        </h2>
-        <p class="activity projectDesc">
-          This was one of my first dips into the world of front-end web
-          development and APIs. WeatherMate will give you the current weather
-          for almost every city worldwide, along with extra wind, pressure, and
-          temperature data. <br />
-          <br />
-          <a href="https://weathermateapps.netlify.app/">Check it out ↪</a>
-        </p>
-      </div>
-      <div
-        id="weatherMate"
-        class="projImage rounded border border-dark project"
-      ></div>
-    </section>
-
-    <section class="projects">
-      <div
-        id="versehunt"
-        class="projImage rounded border border-dark project"
-      ></div>
-      <div id="projText" class="project">
-        <h2 style="margin-top: 10%" class="activity projectTitle">VerseHunt</h2>
-        <p class="activity projectDesc" id="projectDesc">
-          VerseHunt is a poetry search-engine that opens the door to a treasure
-          trove of beautiful words penned by countless gifted writers and
-          lyricists who have graced this world. With the poetryDB API at its
-          core, it grants users access to an extensive collection of timeless
-          classic poems. To ensure inclusivity, VerseHunt offers a read-aloud
-          feature, allowing poetry to be enjoyed by all. And that's not all!
-          Soon, it will also boast a translation feature, further enriching the
-          poetic experience. <br />
-          <br />
-          <a href="https://versehunt.vercel.app/">Check it out ↪</a>
+      <div style="text-align: center; margin-top: 15%">
+        <h1 style="font-size: 400%; font-family: Kalam, cursive">Projects</h1>
+        <p class="reg">
+          Check out some of my recent projects 🌿 <br />
+          🌿 and stay tuned for new ones to come!
         </p>
       </div>
     </section>
 
-    <section class="projects">
-      <div id="projText" class="project">
-        <h2 style="margin-top: 10%" class="activity projectTitle">Peek</h2>
-        <p class="activity projectDesc">
-          Peek is a website that tackles one of the most pressing concerns of
-          our modern world: lazy people trying to create new passwords. By
-          harnessing the power of diverse APIs and algorithms, Peek assesses the
-          relative strength of a user-provided password against multiple
-          factors. But that's not all! Peek goes the extra mile by generating a
-          new password for users, cleverly incorporating fragments of their
-          personal information. This ingenious approach not only enhances
-          security but also guarantees better memorability. Say goodbye to
-          password woes with Peek! <br />
-          <br />
-          <a href="https://peeek.netlify.app/">Check it out ↪</a>
-        </p>
+    <section style="margin-bottom: 7%">
+      <div class="d-flex justify-content-around" style="height: 500px">
+        <div
+          class="project position-relative d-inline-block"
+          style="
+            border-radius: 3%;
+            width: 55%;
+            min-height: 410px;
+            overflow: hidden;
+            background-color: #a2c5dce6;
+            text-align: center;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.294);
+          "
+          onclick="redirectToPage('https://github.com/N4h33n/central_hub')"
+        >
+          <h3 class="sub d-inline-block mt-4">Central Hub</h3>
+          <p class="reg mb-3 ms-3 me-3">
+            An interactive course, research, and extra-curricular management
+            interface for University students.
+          </p>
+          <div
+            class="position-absolute"
+            style="
+              bottom: 0;
+              width: 100%;
+              justify-content: center;
+              align-items: top;
+            "
+          >
+            <img style="width: 50%" src="Projects/Laptop.png" />
+          </div>
+        </div>
+        <div
+          class="project position-relative d-inline-block"
+          style="
+            width: 35%;
+            border-radius: 3%;
+            text-align: center;
+            background-color: #cb9f72db;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.294);
+          "
+          onclick="redirectToPage('https://versehunt.vercel.app/')"
+        >
+          <h3 class="sub d-inline-block mt-4">VerseHunt</h3>
+          <p class="reg mb-3 ms-3 me-3">
+            A poetry search-engine that provides access to classic poems penned
+            the most well-known poets. To ensure inclusivity, VerseHunt offers a
+            read-aloud feature, allowing poetry to be enjoyed by all.
+          </p>
+          <div
+            class="position-absolute"
+            style="
+              bottom: 0;
+              width: 100%;
+              justify-content: center;
+              align-items: bottom;
+            "
+          >
+            <img style="width: 60%" src="Projects/Scroll.png" />
+          </div>
+        </div>
       </div>
-      <div id="Peek" class="projImage rounded border border-dark project"></div>
+    </section>
+
+    <section class="mb-5 mt-5">
+      <div class="d-flex justify-content-around" style="height: 500px">
+        <div
+          class="project position-relative d-inline-block"
+          style="
+            width: 35%;
+            border-radius: 3%;
+            text-align: center;
+            background-color: #eeeb94cc;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.294);
+          "
+          onclick="redirectToPage('https://peeek.netlify.app/')"
+        >
+          <h3 class="sub d-inline-block mt-4">Peek</h3>
+          <p class="reg mb-3 ms-3 me-3">
+            By harnessing the power of the ... API, Peek assesses the relative
+            strength of a user-provided password against multiple factors. But
+            that's not all! Peek goes the extra mile by generating a new
+            password for users by incorporating fragments of their personal
+            information in a secure manner.
+          </p>
+          <div
+            class="position-absolute"
+            style="
+              bottom: 0;
+              width: 100%;
+              justify-content: center;
+              align-items: bottom;
+            "
+          >
+            <img
+              style="width: 45%; padding-bottom: 1%"
+              src="Projects/Padlock.png"
+            />
+          </div>
+        </div>
+        <div
+          class="project position-relative d-inline-block"
+          style="
+            border-radius: 3%;
+            width: 55%;
+            min-height: 410px;
+            overflow: hidden;
+            background-color: #a2c5dce6;
+            text-align: center;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.294);
+          "
+          onclick="redirectToPage('https://weathermateapps.netlify.app/')"
+        >
+          <h3 class="sub d-inline-block mt-4">Weather Mate</h3>
+          <p class="reg mb-3 ms-3 me-3">
+            This was one of my first dips into the world of front-end web
+            development and APIs. WeatherMate will give you the current weather
+            for almost every city worldwide, along with extra wind, pressure,
+            and temperature data.
+          </p>
+          <div
+            class="position-absolute"
+            style="
+              bottom: 0;
+              width: 100%;
+              justify-content: center;
+              align-items: bottom;
+            "
+          >
+            <img style="width: 45%" src="Projects/Cloud.png" />
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="" id="bottom">
-      <h6 id="copyright" class="mt-5 d-inline-block">© 2023 Abigia Debebe</h6>
+      <h6 id="copyright" class="mt-5 d-inline-block">© 2024 Abigia Debebe</h6>
       <div
         id="listsCont"
-        class="d-inline-flex justify-content-between p-2 float-right"
+        class="d-inline-flex justify-content-between p-2 float-right mt-3"
       >
         <div class="list">
           <ul style="list-style-type: none">
