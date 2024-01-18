@@ -67,5 +67,5 @@ window.addEventListener("scroll", () => {
 });
 
 function redirectToPage(pageUrl) {
-  window.location.href = window.location.origin + "/" + pageUrl;
+  window.location.href = pageUrl;
 }
