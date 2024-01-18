@@ -114,6 +114,11 @@ body {
   box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.294);
 }
 
+#projIntro {
+  margin: 30%;
+  z-index: 1;
+}
+
 .holder {
   margin: 10px;
   width: 300px;
@@ -311,6 +316,8 @@ body {
   background: #c9ebbb;
   height: 450px;
   margin-top: 30%;
+  position: relative;
+  bottom: 0%;
 }
 
 .actLists {
@@ -401,6 +408,31 @@ iframe {
   }
 }
 
+#Scroll {
+  width: 50%;
+}
+
+#Laptop {
+  width: 50%;
+}
+
+#Padlock {
+  width: 35%;
+}
+
+#Cloud {
+  width: 45%;
+  position: relative;
+}
+
+#cloudContainer {
+  bottom: 0;
+  top: 2%;
+  width: 100%;
+  justify-content: center;
+  align-items: bottom;
+}
+
 @media (max-width: 1200px) {
   #specTitle,
   #specTitle2,
@@ -444,3 +476,79 @@ iframe {
     margin-bottom: 35%;
   }
 }
+
+@media (max-width: 1300px) {
+  #Hello {
+    top: 10%;
+  }
+}
+
+@media (max-width: 1150px) {
+  #Hello {
+    top: 8%;
+  }
+}
+
+@media (min-width: 1300px) {
+  #Cloud {
+    width: 35%;
+  }
+}
+
+@media (min-width: 1400px) {
+  #blurb1 {
+    margin-top: 50%;
+  }
+
+  #Scroll {
+    width: 50%;
+  }
+
+  #Laptop {
+    width: 40%;
+  }
+}
+
+@media (min-width: 1600px) {
+  #Scroll {
+    width: 45%;
+  }
+}
+
+@media (min-width: 1750px) {
+  #blurb1 {
+    margin-top: 60%;
+  }
+
+  #Laptop {
+    width: 35%;
+  }
+}
+
+@media (min-width: 1750px) {
+  #blurb1 {
+    margin-top: 60%;
+  }
+
+  #Cloud {
+    width: 35%;
+  }
+
+  #cloudContainer {
+    top: 0;
+  }
+}
+
+/* @media (min-width: 1200px) {
+  #projIntro {
+    margin-top: 70%;
+    margin-bottom: 70%;
+  }
+} */
+
+/* @media (min-width: 1300px) {
+  #projIntro {
+    margin-top: 90%;
+    margin-bottom: 80%;
+  }
+} */
